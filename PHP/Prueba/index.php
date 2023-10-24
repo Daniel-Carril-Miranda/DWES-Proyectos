@@ -31,7 +31,7 @@
     ];
 
     $nuevaLista = array_filter ($libros, function ($libro) {
-        return $libro['autor'] === 'Maluma';
+        return $libro['año'] > '1400' && $libro['año'] < '3000';
     });
     
     require "index.view.php";
