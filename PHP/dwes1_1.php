@@ -6,14 +6,11 @@
 </head>
 <body>
     <h1>
-        <?php
-            echo "Hello World";
-        ?>
+        <?php echo "Hello World"; ?>
     </h1>
     <p>
-        <?php 
-            print "Pinta Bien";
-        ?>
+        <?php print "Pinta Bien"; ?> 
+        <!-- Print devuelve un 1 si se ejecuta, por lo que se puede poner en un condicional -->
     </p>
 </body>
 </html>
