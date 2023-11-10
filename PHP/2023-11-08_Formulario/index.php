@@ -1,11 +1,23 @@
 <?php 
+    function comprobar_usuario ($nombre, $clave){
+        if ($nombre === "usuario" && $clave="1234"){
+            $usu["nombre"] = "usuario";
+            $usu["rol"] = 0;
+        } elseif ($nombre == "admin" && $clave= "1234"){
+            $usu["nombre"] = "admin";
+            $usu["rol"] = "1";
+            return $usu;
+        } else return FALSE;
+    }
     if ($_SERVER['REQUEST_METHOD'] == "POST"){
-        if ($_POST["usuario"] == "pepe" && $_POST["clave"]=="1234"){
-            header("Location:bienvenido.html");
+        $usu = comprobar_usuario($_POST["usuario"], $_POST["clave"]);
+        if ($usu == FALSE){
+            $err = TRUE;
         } else {
-            $usuario = $_POST["usuario"];
-            $err = true;
-        }
+                session_start();
+                $_SESSION['usuario'] = $_POST["usuario"];
+                header("Location: Bienvenido1.php");
+        }    
     }
 ?>
 
