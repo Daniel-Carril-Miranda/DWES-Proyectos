@@ -65,4 +65,4 @@ class Material
         return "Titulo: $this->titulo | Autor: $this->autor | ISBN: $this->ISBN | Disponible: " . ($this->disponible ? 'Sí' : 'No');
     }
 }
-require "index.view.php";
+// require "index.view.php";
