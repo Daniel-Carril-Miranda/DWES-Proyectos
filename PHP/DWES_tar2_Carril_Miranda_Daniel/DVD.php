@@ -29,4 +29,3 @@ class DVD extends Material {
         return parent::__toString() . " | Duración: $this->duracion | Género: $this->genero";
     }
 }
-require "index.view.php";

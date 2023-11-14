@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -35,10 +36,10 @@
     /*Los pongo en true porque en el metodo al forzarlo false no me deja luego cambiarlo a true
     asi que pongo true here por default*/
     echo "-----------------------------------------------------------<br>";
-    echo $biblioteca[0];
+    echo $materiales[0];
     echo "<br>";
     echo "-----------------------------------------------------------<br>";
-    echo $biblioteca[1];
+    echo $materiales[1];
     echo "<br>-----------------------------------------------------------";
     ?>
 
@@ -46,10 +47,10 @@
 
     <?php
     echo "-----------------------------------------------------------<br>";
-    echo $biblioteca[2];
+    echo $materiales[2];
     echo "<br>";
     echo "-----------------------------------------------------------<br>";
-    echo $biblioteca[3];
+    echo $materiales[3];
     echo "<br>-----------------------------------------------------------";
     ?>
 
@@ -57,9 +58,9 @@
 
     <?php
     echo "-----------------------------------------------------------<br>";
-    echo $biblioteca[0]->prestar();
+    echo $materiales[0]->prestar();
     echo "<br>-----------------------------------------------------------";
-    echo $biblioteca[0];
+    echo $materiales[0];
     echo "<br>-----------------------------------------------------------";
     ?>
 
@@ -67,10 +68,10 @@
 
     <?php
     echo "-----------------------------------------------------------<br>";
-    echo $biblioteca[3]->prestar();
+    echo $materiales[3]->prestar();
     echo "<br>-----------------------------------------------------------";
     echo "<br>";
-    echo $biblioteca[3];
+    echo $materiales[3];
     echo "<br>-----------------------------------------------------------";
     ?>
 
@@ -78,36 +79,37 @@
 
     <?php
     echo "-----------------------------------------------------------<br>";
-    echo $biblioteca[3]->prestar();
+    echo $materiales[3]->prestar();
     echo "<br>";
     echo "-----------------------------------------------------------<br>";
-    echo $biblioteca[3];
+    echo $materiales[3];
     echo "<br>-----------------------------------------------------------";
     ?>
-    <h2><u>Devolvemos los biblioteca</u></h2>
+    <h2><u>Devolvemos los materiales</u></h2>
 
     <?php
     echo "-----------------------------------------------------------<br>";
-    echo $biblioteca[0]->devolver();
+    echo $materiales[0]->devolver();
     echo "<br>-----------------------------------------------------------";
     echo "<br>";
-    echo $biblioteca[0];
+    echo $materiales[0];
     echo "<br>-----------------------------------------------------------";
     echo "-----------------------------------------------------------<br>";
-    echo $biblioteca[3]->devolver();
+    echo $materiales[3]->devolver();
     echo "<br>-----------------------------------------------------------";
     echo "<br>";
-    echo $biblioteca[3];
+    echo $materiales[3];
     echo "<br>-----------------------------------------------------------";
     ?>
     <h2><u>Intentamos devolver material no prestado</u></h2>
     <?php
     echo "-----------------------------------------------------------<br>";
-    echo $biblioteca[2]->devolver();
+    echo $materiales[2]->devolver();
     echo "<br>-----------------------------------------------------------";
     echo "<br>";
-    echo $biblioteca[2];
+    echo $materiales[2];
     echo "<br>-----------------------------------------------------------";
     ?>
 </body>
+
 </html>

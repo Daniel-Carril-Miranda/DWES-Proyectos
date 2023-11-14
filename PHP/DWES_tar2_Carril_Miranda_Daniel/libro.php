@@ -19,4 +19,3 @@ class Libro extends Material {
         return parent::__toString() . " | Número de Páginas: $this->numPaginas";
     }
 }
-require "index.view.php";
