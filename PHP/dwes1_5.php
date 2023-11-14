@@ -22,5 +22,6 @@
             return $n * factorial_recursivo($n-1);
         }
     }
+    ?>
 </body>
 </html>
