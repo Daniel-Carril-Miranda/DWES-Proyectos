@@ -61,6 +61,20 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") { //Si es POST siginica que previament
         <input type="password" name="clave"> <!-- Este tipo nos permite que salgan puntitos para que no se vea -->
         <button action="submit">Enviar</button>
     </form>
+    <?php
+        $pizaas = $conexionBD->queryAll("SELECT * FROM pizza");
+        foreach ($pizzas as $pizaa) {
+            "<table>
+                <th>
+                    <td>Pizaa</td>
+                    <td>Precio</td>
+                </th>
+                <tr>
+                    <td></td>
+                </tr>
+            </table>";
+        };
+    ?>
 </body>
 
 </html>
