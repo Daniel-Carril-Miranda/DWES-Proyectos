@@ -23,10 +23,11 @@
             $a = 5;
             $b = 5;
             echo "a = " . $a . " tipo = " . gettype($a) . "<br>";
-            echo "b = $b tipo = " . gettype($b) . "<br>";
+            echo "b = $b tipo = " . gettype($b) . "<br>"; //Esto es lo mismo sin la falta de .
             echo "a+b = " . $a + $b . "<br>"; 
             echo "++a = " . ++$a . "<br>";
-            echo "b++ = " . $b++;
+            echo "b++ = " . $b++ . "<br>";
+            echo $b;
         ?>
     </p>
     <br>
@@ -34,7 +35,7 @@
         <?php
             $c = "3.1416";
             echo "c = $c " . gettype($c) . "<br>";
-            settype($c, "float");
+            settype($c, "float"); // Lo convierte a Float
             echo "c = $c " . gettype($c);
         ?>
     </p>
@@ -48,6 +49,7 @@
                 0 => "Lazaro de Tormes",
                 1 => "La biblia"
             ];
+            // Maneta 3 de Array
             $libros3 = [
                 [
                     "titulo" => "La biblia",
