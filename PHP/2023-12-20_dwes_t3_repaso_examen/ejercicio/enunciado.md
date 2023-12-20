@@ -42,3 +42,5 @@ Modifica el archivo para que liste los usuarios de una actvidad en concreto en f
 La página deberá crear una cookie de 24h de duración que sea capaz de recordar qué opción del menú desplegable eligió el usuario en su última visita.
 
 ## registro_cliente.php
+
+Completa el código para que funcione con una base de datos llamada dwes_t3_examen que tiene una tabla llamada puntosderecogida que tiene 5 campos: id, localidad, direccion, capacidad y ocupadas
